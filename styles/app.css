@@ -1,0 +1,68 @@
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "system"
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+
+  background: #212121;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: #FFFFFF;
+}
+
+.navigation a:hover {
+  background: 
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.find-me {
+  max-width: 50%;
+}
+
+.find-me a, a:visited {
+  padding: 0 0.5em;
+  text-decoration: none;
+}
+
+.find-me--twitter {
+  color: #1da1f2;
+}
+
+.find-me--github {
+  color: #333;
+}
+
+.find-me--instagram {
+  color: #ED4A55;
+}
