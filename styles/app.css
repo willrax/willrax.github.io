@@ -13,56 +13,62 @@ body {
 }
 
 .navigation {
-  list-style: none;
-  margin: 0;
-
+  -webkit-flex-flow: row wrap;
   background: #212121;
-
-  display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-
-  -webkit-flex-flow: row wrap;
   justify-content: flex-end;
+  list-style: none;
+  margin: 0;
 }
 
 .navigation a {
-  text-decoration: none;
+  color: #FFFFFF;
   display: block;
   padding: 1em;
-  color: #FFFFFF;
-}
-
-.navigation a:hover {
-  background: 
+  text-decoration: none;
 }
 
 .container {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   height: 100%;
+  justify-content: center;
 }
 
 .find-me {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .find-me a, a:visited {
+  font-size: 1.5em;
   padding: 0 0.5em;
   text-decoration: none;
 }
 
-.find-me--twitter {
+.find-me__link--twitter {
   color: #1da1f2;
 }
 
-.find-me--github {
+.find-me__link--github {
   color: #333;
 }
 
-.find-me--instagram {
+.find-me__link--instagram {
   color: #ED4A55;
+}
+
+@media(max-device-width: 600px) {
+  .find-me__link {
+    display: block;
+    margin: 10px 0;
+    max-width: 100%;
+  }
+
+  .find-me__link i {
+    font-size: 20em;
+  }
 }
